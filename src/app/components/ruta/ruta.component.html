@@ -1,0 +1,29 @@
+<h1>{{ruta.ciudadorig}} <small>{{ruta.ciudaddest}}</small></h1>
+<hr>
+<div class="row">
+
+    <div class="col-md-4">
+       
+        <a [routerLink]="['/rutas']" class="btn btn-outilne-danger btn-block"> Regresar </a>
+
+    </div>
+    <div class="col-md-8">
+        <h3>{{ruta.ciudadorig}}</h3>
+        <hr>
+        <p>
+            {{ruta.ciudaddest}}
+        </p>
+        <p>
+            {{ruta.precio}}
+        </p>
+        <p>
+            {{ruta.descripcion}}
+        </p>
+        <p>
+            {{ruta.tipo}}
+        </p>
+
+    
+
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<h1>Rutas <small>RUTAS COOPERATIVA AZUAY</small></h1>
+<hr>
+<div class="col animated fadeIn fast" *ngFor="let ruta of rutas; let i=index">
+
+    <div class="card mb-3 " style="max-width: 540px;">
+        <div class="row g-0">
+            
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ruta.ciudadorig}}</h5>
+                    <p class="card-text">{{ruta.ciudaddest}}</p>
+                    <p class="card-text"><small class="text-body-secondary">{{ruta.precio}}</small></p>
+                    <p class="card-text"><small class="text-body-secondary">{{ruta.descripcion}}</small></p>
+                    <p class="card-text"><small class="text-body-secondary">{{ruta. tipo}}</small></p>
+                    <button (click)="verRuta(i)" type="button" class="btn btn-primary">Saber más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
